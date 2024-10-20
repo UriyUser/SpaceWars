@@ -1,0 +1,31 @@
+body {
+    background: #001030;
+    overflow: hidden;
+}
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: gold;
+  box-shadow: 0px 0px 2px 1px white;
+  animation: star-scale infinite alternate;
+}
+@keyframes star-scale {
+  0% { transform: scale(1); opacity: 1; }
+  25% { transform: scale(.9); opacity: .8; }
+  50% { transform: scale(1); opacity: .9; }
+  75% { transform: scale(.2); opacity: .2; }
+  100% { transform: scale(.9); opacity: .9; }
+}
+#m1 {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+#m2 {
+  position: absolute;
+  left: 100px;
+  top: 0px;
+  height: 800px;
+}
